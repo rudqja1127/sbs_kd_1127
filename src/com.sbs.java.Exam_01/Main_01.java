@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 	
-public class Main_article {
+public class Main_01 {
 	public static void main(String[] args) {
 			System.out.println("== 프로그램 시작 ==");
 			Scanner sc = new Scanner(System.in);
