@@ -10,7 +10,7 @@ public class Main_01 {
 			Scanner sc = new Scanner(System.in);
 
 			int lastArticleId = 0;
-			List<Article> articles = new ArrayList<>();
+			List<Article> article = new ArrayList<>();
 
 			while (true) {
 				System.out.printf("명령어) ");
@@ -31,7 +31,7 @@ public class Main_01 {
 					System.out.printf("내용 : ");
 					String body = sc.nextLine();
 
-					Article article = new Article(id, title, body);
+					Article_1 article = new Article_1(id, title, body);
 					articles.add(article);
 
 					System.out.printf("%d번 글이 생성되었습니다.\n", id);
@@ -52,10 +52,10 @@ public class Main_01 {
 					int id = Integer.parseInt(commandBits[2]);
 
 					boolean found = false;
-					Article foundArticle = null;
+					Article_1 foundArticle = null;
 
 					for (int i = 0; i < articles.size(); i++) { //articles 뒤져서 나옴
-						Article article = articles.get(i);
+						Article_1 article = articles.get(i);
 
 						if (article.id == id) { //id의 게시물을 찾아서 통제로 foundArticle에 넣어!
 							found = true; //게시물 찾음
@@ -91,12 +91,12 @@ public class Main_01 {
 내용 : ~~~~~
 */
 
-class Article {
+class Article_1 {
 		int id;
 		String title;
 		String body;
 
-		public Article(int id, String title, String body) {
+		public Article_1(int id, String title, String body) {
 			this.id = id;
 			this.title = title;
 			this.body = body;
